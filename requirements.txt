@@ -1,0 +1,32 @@
+# =============================================================================
+# AI Resume Screening Telegram Bot — Dependencies
+# =============================================================================
+# Install: pip install -r requirements.txt
+# =============================================================================
+
+# --- Web Framework ---
+fastapi>=0.115.0,<1.0.0
+uvicorn[standard]>=0.34.0,<1.0.0
+
+# --- Telegram Bot ---
+python-telegram-bot>=22.0,<23.0.0
+
+# --- LLM Providers ---
+# Primary: Google Gemini API
+google-genai>=1.0.0,<2.0.0
+# Fallback: OpenRouter (uses OpenAI-compatible API)
+openai>=1.50.0,<2.0.0
+
+# --- Document Parsing ---
+PyMuPDF>=1.25.0,<2.0.0
+python-docx>=1.1.0,<2.0.0
+
+# --- Data Validation ---
+pydantic>=2.10.0,<3.0.0
+pydantic-settings>=2.6.0,<3.0.0
+
+# --- HTTP Client ---
+httpx>=0.28.0,<1.0.0
+
+# --- Configuration ---
+python-dotenv>=1.0.0,<2.0.0

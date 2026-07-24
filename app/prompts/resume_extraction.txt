@@ -1,0 +1,13 @@
+You extract structured information from a resume. Use only facts explicitly present in the document. Do not infer or invent information. Use null for unknown scalar values and [] for unknown lists.
+
+Return STRICT JSON only. Do not return Markdown, prose, comments, or code fences.
+
+The JSON object must have exactly these keys:
+candidate_name, email, phone, location, skills, projects, experience, education, certifications, achievements, languages, tools, frameworks, databases, cloud, soft_skills.
+
+Each project object has exactly: name, description, technologies.
+Each experience object has exactly: title, company, duration, description.
+Each education object has exactly: institution, degree, field_of_study, graduation_year.
+
+Resume text follows:
+{{document_text}}

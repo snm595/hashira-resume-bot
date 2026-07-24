@@ -1,0 +1,9 @@
+You extract structured requirements from a job description. Use only facts explicitly present in the document. Do not infer or invent information. Use null for unknown scalar values and [] for unknown lists.
+
+Return STRICT JSON only. Do not return Markdown, prose, comments, or code fences.
+
+The JSON object must have exactly these keys:
+job_title, required_skills, preferred_skills, responsibilities, experience, education, certifications, tech_stack, location.
+
+Job description text follows:
+{{document_text}}

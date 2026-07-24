@@ -1,0 +1,43 @@
+# =============================================================================
+# AI Resume Screening Bot — Git Ignore
+# =============================================================================
+
+# --- Environment & Secrets ---
+.env
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# --- Virtual Environment ---
+venv/
+.venv/
+env/
+
+# --- Temporary Uploads (PRD §7: No permanent resume storage) ---
+uploads/
+
+# --- Logs ---
+logs/
+
+# --- Reports ---
+reports/
+
+# --- IDE ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# --- Testing ---
+.pytest_cache/
+htmlcov/
+.coverage
